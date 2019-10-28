@@ -66,6 +66,9 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="card0" destination="gSf-Ss-OdU" id="MUL-XY-dfx"/>
+                        <outlet property="card1" destination="d7U-zg-Fb3" id="9rh-Mp-nXt"/>
+                        <outlet property="card12" destination="b06-UH-zjf" id="okI-Q4-elS"/>
                         <outlet property="displayLabel" destination="PWo-aj-XIw" id="kjW-Dm-RQe"/>
                     </connections>
                 </viewController>
