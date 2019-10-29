@@ -17,7 +17,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gSf-Ss-OdU">
-                                <rect key="frame" x="20" y="230" width="122" height="154"/>
+                                <rect key="frame" x="20" y="171" width="107" height="154"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" image="cardBackRed">
@@ -27,8 +27,16 @@
                                     <action selector="pickingCard:" destination="BYZ-38-t0r" eventType="touchUpInside" id="SSD-M4-Dnd"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b06-UH-zjf">
-                                <rect key="frame" x="284" y="230" width="110" height="154"/>
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d7U-zg-Fb3">
+                                <rect key="frame" x="146" y="171" width="107" height="154"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="cardBackRed"/>
+                                <connections>
+                                    <action selector="pickingCard:" destination="BYZ-38-t0r" eventType="touchUpInside" id="NKr-zA-gZf"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b06-UH-zjf" userLabel="Card2">
+                                <rect key="frame" x="261" y="171" width="107" height="154"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="cardBackRed"/>
                                 <connections>
@@ -36,7 +44,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O49-xM-1YQ">
-                                <rect key="frame" x="178" y="493" width="75" height="30"/>
+                                <rect key="frame" x="178" y="650" width="75" height="45"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="New Game">
@@ -47,20 +55,12 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Pick a card, any card" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PWo-aj-XIw">
-                                <rect key="frame" x="142" y="438" width="159" height="21"/>
+                                <rect key="frame" x="128" y="110" width="159" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d7U-zg-Fb3">
-                                <rect key="frame" x="165" y="230" width="100" height="154"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="cardBackRed"/>
-                                <connections>
-                                    <action selector="pickingCard:" destination="BYZ-38-t0r" eventType="touchUpInside" id="NKr-zA-gZf"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -68,7 +68,7 @@
                     <connections>
                         <outlet property="card0" destination="gSf-Ss-OdU" id="MUL-XY-dfx"/>
                         <outlet property="card1" destination="d7U-zg-Fb3" id="9rh-Mp-nXt"/>
-                        <outlet property="card12" destination="b06-UH-zjf" id="okI-Q4-elS"/>
+                        <outlet property="card2" destination="b06-UH-zjf" id="v9D-Eb-dle"/>
                         <outlet property="displayLabel" destination="PWo-aj-XIw" id="kjW-Dm-RQe"/>
                     </connections>
                 </viewController>
